@@ -1,28 +1,28 @@
-const { Comment } = require('../models');
+const { Comment, Blog } = require('../models');
 
 const commentData = [
     {
-        category_name: 'Computer',
+        body: 'Computer',
     
     },
     {
-        category_name: 'Books',
+        body: 'Books',
     
     },
     {
-        category_name: 'Pens',
+        body: 'Pens',
     
     },
     {
-        category_name: 'Coffee',
+        body: 'Coffee',
     
     },
     {
-        category_name: 'Phone',
+        body: 'Phone',
     
     },
 ];
 
-const seedComment = () => category.bulkCreate(CommentData);
+const seedComment = () => Comment.bulkCreate(commentData);
 
 module.exports = seedComment;

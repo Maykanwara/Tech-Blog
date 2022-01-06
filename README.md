@@ -18,7 +18,7 @@ This is to build a  Tech-Blog.
 
 ## Link to Deployed Application
 
-[Live Deployment Link]())
+[Live Deployment Link](https://maykanwara.github.io/Tech-Blog/))
 
 ## Screenshots of Finished Product
 

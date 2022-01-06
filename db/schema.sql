@@ -1,3 +1,3 @@
-DROP DATABASE IF  EXISTS teachblog_db;
+DROP DATABASE IF  EXISTS techblog_db;
 
-CREATE DATABASE teachblog_db
+CREATE DATABASE techblog_db

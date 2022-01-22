@@ -1,28 +1,33 @@
-const { User } = require('../models');
+const { User } = require("../models");
 
 const userData = [
-    {
-        category_name: 'Computer',
-    
+  {
+    name: "Computer",
+    email: "Maykanwara1@gmail.com",
+    password: "9999999"
+  },
+  {
+    name: "Books",
+    email: "Maykanwara2@gmail.com",
+    password: "9999999"
+  },
+  {
+    name: "Pens",
+    email: "Maykanwara3@gmail.com",
+    password: "9999999"
     },
-    {
-        category_name: 'Books',
-    
-    },
-    {
-        category_name: 'Pens',
-    
-    },
-    {
-        category_name: 'Coffee',
-    
-    },
-    {
-        category_name: 'Phone',
-    
-    },
+  {
+    name: "Coffee",
+    email: "Maykanwara4@gmail.com",
+    password: "9999999"
+  },
+  {
+    name: "Phone",
+    email: "Maykanwara5@gmail.com",
+    password: "9999999"
+  },
 ];
 
-const seedUser = () => category.bulkCreate(UserData);
+const seedUser = () => User.bulkCreate(userData);
 
 module.exports = seedUser;

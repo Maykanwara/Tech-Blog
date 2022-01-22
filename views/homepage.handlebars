@@ -3,11 +3,11 @@
 <a href="./login">Login Page</a>
 <a href="./api/users/logout" id="logout">Logout Page</a>
 
-{{each blog as [blog]}}
+{{#each blogs}}
 <div class="row align-center mb-5">
     <div class="col-md-6">
-        <h2>{{blog.title}}</h2>
-        <p>{{blog.content</p>
+        <h2>{{post_title}}</h2>
+        <p>{{post_content}}</p>
     </div>
 </div>
 {{/each}}

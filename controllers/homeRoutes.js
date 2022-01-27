@@ -19,20 +19,20 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("dashboard", withAuth, async (req, res) => {
+router.get("/dashboard", withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
       include: [{ model: Blog }],
-      include: [{ model: User }],
-      attributes: ["display_name"],
+      // include: [{ model: User }],
+      attributes: ["name"],
     });
 
-    const users = userData.get({ plain: true });
-    console.log(users.blogs);
+    const user = userData.get({ plain: true });
+    console.log(user.blogs);
     res.render("profile", {
-      users: users,
-      blogs: users.blogs,
+      user: user,
+      blogs: user.blogs,
       logged_in: true,
     });
   } catch (err) {
@@ -42,10 +42,10 @@ router.get("dashboard", withAuth, async (req, res) => {
 });
 
 router.get("/login", (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect("/");
-    return;
-  }
+  // if (req.session.logged_in) {
+  //   res.redirect("/");
+  //   return;
+  // }
   res.render("login");
 });
 

@@ -20,6 +20,7 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/dashboard", withAuth, async (req, res) => {
+  console.log(req.session)
   try {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
@@ -29,7 +30,7 @@ router.get("/dashboard", withAuth, async (req, res) => {
     });
 
     const user = userData.get({ plain: true });
-    console.log(user.blogs);
+    console.log(user);
     res.render("profile", {
       user: user,
       blogs: user.blogs,

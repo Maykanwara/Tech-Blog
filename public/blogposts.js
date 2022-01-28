@@ -1,13 +1,13 @@
-$("#newPost").on("click", async function () {
+$("#newPost").on("submit", async function (event) {
     event.preventDefault();
 
-    const blogTitle = $('#blog-title').val().trim();
-    const blogContent = $('#blog-content').val().trim()
+    const post_title = $('#blog-title').val().trim();
+    const post_content = $('#blog-content').val().trim()
 
-    if (blogTitle && blogContent) {
+    if (post_title && post_content) {
         const response = await fetch('/api/blogs', {
             method: 'POST',
-            body: JSON.stringify({ blogTitle, blogContent }),
+            body: JSON.stringify({ post_title, post_content }),
             headers: { 'Content-Type': 'application/json' },
         });
         console.log(response)
@@ -88,9 +88,9 @@ $("#newComment").on("click", async function () {
 })
 
 
-$(document).ready(function(){
-    $('.modal').modal();
-});
+// $(document).ready(function(){
+//     $('.modal').modal();
+// });
 
 
 

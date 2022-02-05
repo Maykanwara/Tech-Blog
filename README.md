@@ -1,9 +1,7 @@
 # Tech-Blog
 
-
 ## Description
-This is to build a  Tech-Blog.
-
+This is a project is the application contained within is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. The app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
 ## Languages
 - express-handlebars
@@ -20,9 +18,9 @@ This is to build a  Tech-Blog.
 
 [Live Deployment Link](https://maykanwara.github.io/Tech-Blog/))
 
-## Screenshots of Finished Product
 
 ## Contact Information
+GiHub:[Maykanwara](https://github.com/Maykanwara)
 Email: maykanwara@gmail.com
 
 
@@ -34,20 +32,7 @@ Email: maykanwara@gmail.com
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- Model-View-Controller (MVC): Tech Blog
+Model-View-Controller (MVC): Tech Blog
 Your Task
 Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing code bases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
 
